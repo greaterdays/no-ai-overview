@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "No AI Overview",
     "version": "1.0",
-    "description": "Test",
+    "description": "Completely removes the Google AI Overview without affecting any other part of your browsing experience.",
     "permissions": [
         "webNavigation",
         "tabs"
