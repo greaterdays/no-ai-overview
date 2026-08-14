@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "No AI Overview",
+    "version": "1.0",
+    "description": "Test",
+    "permissions": [
+        "webNavigation",
+        "tabs"
+    ],
+    "host_permissions": [
+        "*://*.google.com/search*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.google.com/search*"],
+            "js": ["content.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
