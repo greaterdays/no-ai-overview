@@ -11,7 +11,8 @@
         "*://*.google.com/search*"
     ],
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "background.js",
+        "scripts": ["background.js"]
     },
     "content_scripts": [
         {
@@ -22,7 +23,10 @@
     ],
     "browser_specific_settings": {
         "gecko": {
-            "id": "no-ai-overview@greaterdays.com"
+            "id": "no-ai-overview@greaterdays.com",
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
         }
     }
 }
